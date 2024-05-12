@@ -14,15 +14,15 @@ public class theServer extends javax.swing.JFrame {
 
 //inner class can be executed concurrently
 //handling coomunication with each connected client
-    public class ClientHandler implements Runnable {
+    public class C_treadHandler implements Runnable {
 
         BufferedReader reader; // variable that  reading input from the client
         Socket sock; // variable that holding the client socket
-        PrintWriter client;// variable that sending output to the client 
+        PrintWriter client;// variable that sending output to the client
 
-//contructor for clientHandler
+//contructor for C_treadHandler
 //initializes the client socket, input stream reader, and buffered reader for reading client messages
-        public ClientHandler(Socket clientSocket, PrintWriter user) {
+        public C_treadHandler(Socket clientSocket, PrintWriter user) {
             client = user;
             try {
                 sock = clientSocket;
@@ -35,7 +35,7 @@ public class theServer extends javax.swing.JFrame {
         }
 
 
-// run method is executed when a ClientHandler object is started as a thread.
+// run method is executed when a C_treadHandler object is started as a thread.
 //reads messages from the client, splits them into parts, and processes them based on their content
         @Override
         public void run() {
@@ -469,7 +469,7 @@ public class theServer extends javax.swing.JFrame {
  public class StartServer implements Runnable {
 
 //It listens for incoming client connections on port 2222,
-// accepts new connections, and creates a new thread (ClientHandler) to handle each client.
+// accepts new connections, and creates a new thread (C_treadHandler) to handle each client.
 
         @Override
         public void run() {
@@ -484,7 +484,7 @@ public class theServer extends javax.swing.JFrame {
                     PrintWriter writer = new PrintWriter(clientSock.getOutputStream());
                     clientOutputStreams.add(writer);
 
-                    Thread listener = new Thread(new ClientHandler(clientSock, writer));
+                    Thread listener = new Thread(new C_treadHandler(clientSock, writer));
                     listener.start();
                     dataStored.append("Got a connection. \n");
                 }

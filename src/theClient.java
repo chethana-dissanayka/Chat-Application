@@ -12,7 +12,7 @@ public class theClient extends javax.swing.JFrame {
 // address: Stores the default server address as "localhost".
 // users: An ArrayList to store the usernames of connected users
     Source OOP = new Source();
-    String username, address = "localhost";
+    String username, address = "192.168.93.47";
     ArrayList<String> users = new ArrayList();
 
 //variable tracks whether the client is connected to the server.
