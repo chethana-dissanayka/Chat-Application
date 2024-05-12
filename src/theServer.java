@@ -113,7 +113,7 @@ public class theServer extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
 //User interface application 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(210, 255, 255));
 
         dataStored.setColumns(20);
         dataStored.setFont(new java.awt.Font("Segoe Script", 1, 11)); 
@@ -124,11 +124,11 @@ public class theServer extends javax.swing.JFrame {
 
 //label component representing the "Start" button.
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel2.setBackground(new java.awt.Color(20, 204, 204));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_start_20px.png"))); 
-        jLabel2.setText("Start");
+        // jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_start_20px.png"))); 
+        jLabel2.setText("Start Server");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2MouseClicked(evt);
@@ -153,11 +153,11 @@ public class theServer extends javax.swing.JFrame {
         );
 
 // label component representing the "Stop" button.
-        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel3.setBackground(new java.awt.Color(20, 204, 204));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_stop_20px.png"))); 
-        jLabel3.setText("Stop");
+        // jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_stop_20px.png"))); 
+        jLabel3.setText("Stop Server");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
@@ -184,11 +184,11 @@ public class theServer extends javax.swing.JFrame {
 
 // label component representing the "Users" button.
 
-        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBackground(new java.awt.Color(20, 204, 204));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_user_groups_20px.png"))); 
-        jLabel4.setText("Users");
+        // jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_user_groups_20px.png"))); 
+        jLabel4.setText("Show Users");
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
@@ -215,11 +215,11 @@ public class theServer extends javax.swing.JFrame {
 
 // label component representing the "Clear" button.
 
-        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel5.setBackground(new java.awt.Color(20, 204, 204));
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_broom_20px.png"))); 
-        jLabel5.setText("Clear");
+        // jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_broom_20px.png"))); 
+        jLabel5.setText("Clear Server");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -248,7 +248,7 @@ public class theServer extends javax.swing.JFrame {
         server.setBackground(new java.awt.Color(153, 153, 153));
         server.setFont(new java.awt.Font("Tahoma", 0, 14)); 
         server.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_ubuntu_40px.png"))); 
-        server.setText("Server");
+        server.setText("Server Side");
 
 //setup the layout for whole user interface       
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -432,7 +432,7 @@ public class theServer extends javax.swing.JFrame {
         tellEveryone(done);
     }
 
-// sends a message to all connected clients.   
+// sends a message to all connected clients.
     public void tellEveryone(String message) {
         Iterator it = clientOutputStreams.iterator();
 

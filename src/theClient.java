@@ -110,9 +110,9 @@ public class theClient extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
 //set application layout
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(200, 255, 255));
 
-        sentMessage.setBackground(new java.awt.Color(240, 240, 240));
+        sentMessage.setBackground(new java.awt.Color(250, 230, 190));
         sentMessage.setColumns(20);
         sentMessage.setFont(new java.awt.Font("Segoe Script", 1, 11)); // NOI18N
         sentMessage.setRows(5);
@@ -153,9 +153,9 @@ public class theClient extends javax.swing.JFrame {
         );
 
 // disconnect icon setup
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(200, 255, 255));
 
-        disConnect.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_disconnected_30px_1.png"))); // NOI18N
+        disConnect.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_stop_20px.png"))); // NOI18N
         disConnect.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 disConnectMouseClicked(evt);
@@ -183,9 +183,9 @@ public class theClient extends javax.swing.JFrame {
 
 
 //connected icon setup
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBackground(new java.awt.Color(200, 255, 255));
 
-        isConnnected.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_connect_30px.png"))); // NOI18N
+        isConnnected.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_connect_80px.png"))); // NOI18N
         isConnnected.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 isConnnectedMouseClicked(evt);
@@ -234,7 +234,7 @@ public class theClient extends javax.swing.JFrame {
         });
 
 // label configuration
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_people_30px_1.png"))); 
+        // jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_people_30px_1.png"))); 
         jLabel4.setText(".");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); 
